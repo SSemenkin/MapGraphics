@@ -7,6 +7,8 @@
 PrivateQGraphicsView::PrivateQGraphicsView(QWidget *parent) :
     QGraphicsView(parent)
 {
+    qDebug() << "HELLO FROM DCTOR";
+
     this->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     this->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 }
